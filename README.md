@@ -24,5 +24,17 @@ According to the survey, 80% of the world’s data is unstructured. The data nee
 > Sentiment analysis solves real-time issues and can help you solve all real-time scenarios.
 So, It helps the business to determine whether the product they are manufacturing is going to make a demand in the market or not.
 
- 
+
+ Functions used:
+---------------
+str.maketrans(x, y, z)		#It returns a mapping table
+x: required. if only one paramter, then it must be a dictionary with key & values. If 2 or more, then it will be a string specifying the characters you want to replace.
+y: optional. A string with same length as parameter x. Each character in 1st parameter is replaced by corresponding character in this string.
+z: optional. A string specifes which characters to remove from the 'original' string.
+
+If there is only one argument, it returns the unicode value as a dictionary.
+If there are two arguments, they must be strings of equal length, and in the resulting dictionary, each character in str1 will be mapped to the character at the same position in str2.
+If 3 args are passed, then each characters of 1st string are mapped to corresponding characters of 2nd string; while all characters in 3rd string are mapped to None. All returned as dictionary. 
+If maketrans() is passed to translate(), then it also replaces the character of x with y. Otherwise, returns a dictionary of unicode character with key as x & value with y.
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
